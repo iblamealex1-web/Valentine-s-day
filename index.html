@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Valentine's Day Tito 💘</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      overflow-x: hidden;
+    }
+    .dancing {
+      font-family: "Dancing Script", cursive;
+    }
+
+    /* Floating hearts animation */
+    .heart {
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      background: rgba(255, 105, 180, 0.7);
+      transform: rotate(45deg);
+      animation: floatUp 8s linear infinite;
+      border-radius: 4px;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      background: rgba(255, 105, 180, 0.7);
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -9px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: -9px;
+      top: 0;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) rotate(45deg);
+        opacity: 0.9;
+      }
+      100% {
+        transform: translateY(-120vh) rotate(45deg);
+        opacity: 0;
+      }
+    }
+
+    /* Fade in animation */
+    .fade-in {
+      animation: fadeIn 1.8s ease-in-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Glow effect */
+    .glow {
+      box-shadow: 0 0 25px rgba(255, 105, 180, 0.4);
+    }
+
+    /* Smooth scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-b from-pink-100 via-pink-200 to-rose-200 text-gray-900 relative">
+
+  <!-- Floating hearts container -->
+  <div id="hearts"></div>
+
+  <!-- HERO -->
+  <section class="min-h-screen flex flex-col items-center justify-center text-center px-6 relative">
+    <h1 class="text-5xl md:text-7xl dancing font-bold text-rose-700 fade-in">
+      Happy Valentine’s Day, Tito 💘
+    </h1>
+
+    <p class="mt-6 text-lg md:text-xl text-gray-700 max-w-2xl fade-in">
+      I made this little website just for you…  
+      because you deserve something special, something soft, something that feels like love.
+    </p>
+
+    <a href="#story"
+      class="mt-10 px-8 py-4 rounded-full bg-rose-600 text-white font-semibold text-lg hover:bg-rose-700 transition glow fade-in">
+      Scroll for your surprise 🥀
+    </a>
+  </section>
+
+  <!-- STORY -->
+  <section id="story" class="py-20 px-6 md:px-20">
+    <h2 class="text-4xl md:text-5xl dancing font-bold text-center text-rose-700 mb-12 fade-in">
+      Our Little Story ✨
+    </h2>
+
+    <div class="max-w-4xl mx-auto space-y-8">
+      <div class="bg-white/60 backdrop-blur-lg p-8 rounded-3xl shadow-xl fade-in">
+        <h3 class="text-2xl font-semibold text-rose-700">The first moment</h3>
+        <p class="mt-3 text-gray-700">
+          I don’t know when it started… but one day I realized,
+          you weren’t just someone in my life.
+          You were becoming my favorite part of it.
+        </p>
+      </div>
+
+      <div class="bg-white/60 backdrop-blur-lg p-8 rounded-3xl shadow-xl fade-in">
+        <h3 class="text-2xl font-semibold text-rose-700">The comfort</h3>
+        <p class="mt-3 text-gray-700">
+          You feel like peace.
+          Like something warm in a cold world.
+          Like a heartbeat that calms everything down.
+        </p>
+      </div>
+
+      <div class="bg-white/60 backdrop-blur-lg p-8 rounded-3xl shadow-xl fade-in">
+        <h3 class="text-2xl font-semibold text-rose-700">The now</h3>
+        <p class="mt-3 text-gray-700">
+          And now, all I know is this:
+          if love had a face…
+          it would look like you.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- REASONS -->
+  <section class="py-20 px-6 md:px-20 bg-white/40 backdrop-blur-lg">
+    <h2 class="text-4xl md:text-5xl dancing font-bold text-center text-rose-700 mb-12 fade-in">
+      Reasons I Love You 💗
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="p-8 rounded-3xl bg-white/70 shadow-xl hover:scale-105 transition fade-in">
+        <h3 class="text-xl font-semibold text-rose-700">Your vibe</h3>
+        <p class="mt-3 text-gray-700">
+          You have a vibe that feels like magic.
+          It makes everything lighter.
+        </p>
+      </div>
+
+      <div class="p-8 rounded-3xl bg-white/70 shadow-xl hover:scale-105 transition fade-in">
+        <h3 class="text-xl font-semibold text-rose-700">Your heart</h3>
+        <p class="mt-3 text-gray-700">
+          Your heart is beautiful.
+          It’s rare. And it deserves to be loved gently.
+        </p>
+      </div>
+
+      <div class="p-8 rounded-3xl bg-white/70 shadow-xl hover:scale-105 transition fade-in">
+        <h3 class="text-xl font-semibold text-rose-700">Your presence</h3>
+        <p class="mt-3 text-gray-700">
+          Even when you're not here,
+          your presence stays with me.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="py-20 px-6 md:px-20">
+    <h2 class="text-4xl md:text-5xl dancing font-bold text-center text-rose-700 mb-12 fade-in">
+      A Little Gallery 📸
+    </h2>
+
+    <p class="text-center text-gray-700 max-w-2xl mx-auto mb-10 fade-in">
+      Replace these placeholder boxes with your pictures later 💕  
+      (You can add Tito’s photos + your memories here)
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="h-64 rounded-3xl bg-white/70 shadow-xl flex items-center justify-center text-gray-500 fade-in">
+        Photo 1
+      </div>
+      <div class="h-64 rounded-3xl bg-white/70 shadow-xl flex items-center justify-center text-gray-500 fade-in">
+        Photo 2
+      </div>
+      <div class="h-64 rounded-3xl bg-white/70 shadow-xl flex items-center justify-center text-gray-500 fade-in">
+        Photo 3
+      </div>
+    </div>
+  </section>
+
+  <!-- LOVE LETTER -->
+  <section class="py-20 px-6 md:px-20 bg-white/40 backdrop-blur-lg">
+    <h2 class="text-4xl md:text-5xl dancing font-bold text-center text-rose-700 mb-12 fade-in">
+      A Letter For You 💌
+    </h2>
+
+    <div class="max-w-4xl mx-auto bg-white/70 p-10 rounded-3xl shadow-xl fade-in">
+      <p class="text-lg text-gray-800 leading-relaxed">
+        Tito… <br><br>
+        If I could hold one moment forever,  
+        it would be the moment you smile.  
+        Because in that smile, I see something pure… something real.  
+        <br><br>
+        I don’t want perfect love.  
+        I want a love that stays.  
+        A love that chooses, again and again.  
+        <br><br>
+        And if I had to choose my favorite feeling in the world…  
+        it would always be you.  
+        <br><br>
+        Happy Valentine’s Day, my Tito. 💗
+      </p>
+    </div>
+  </section>
+
+  <!-- SURPRISE -->
+  <section class="min-h-screen flex flex-col items-center justify-center text-center px-6 relative">
+    <h2 class="text-5xl md:text-6xl dancing font-bold text-rose-700 fade-in">
+      One Last Surprise 🎁
+    </h2>
+
+    <p class="mt-6 text-lg md:text-xl text-gray-700 max-w-xl fade-in">
+      Click the button below, Tito…  
+      I saved something special for the end.
+    </p>
+
+    <button onclick="openGift()"
+      class="mt-10 px-10 py-4 rounded-full bg-rose-600 text-white font-semibold text-lg hover:bg-rose-700 transition glow fade-in">
+      Open Gift 💝
+    </button>
+
+    <!-- Modal -->
+    <div id="giftModal"
+      class="hidden fixed inset-0 bg-black/50 flex items-center justify-center px-6">
+      <div class="bg-white rounded-3xl shadow-2xl p-10 max-w-lg text-center relative">
+        <h3 class="text-4xl dancing font-bold text-rose-700">Tito 💘</h3>
+        <p class="mt-4 text-gray-700 text-lg leading-relaxed">
+          If I could give you one thing in life…  
+          I’d give you the ability to see yourself through my eyes.  
+          <br><br>
+          Because you are beautiful, rare, and worth everything.
+        </p>
+
+        <p class="mt-6 text-2xl dancing text-rose-600 font-bold">
+          I love you endlessly 🥀
+        </p>
+
+        <button onclick="closeGift()"
+          class="mt-8 px-8 py-3 rounded-full bg-rose-600 text-white font-semibold hover:bg-rose-700 transition">
+          Close 💗
+        </button>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-8 text-center text-gray-700 text-sm">
+    Made with love for Tito 💘 | Forever yours.
+  </footer>
+
+  <script>
+    // Floating hearts generator
+    const heartsContainer = document.getElementById("hearts");
+
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = (5 + Math.random() * 5) + "s";
+      heart.style.opacity = Math.random();
+      heart.style.transform = "rotate(45deg) scale(" + (0.5 + Math.random()) + ")";
+
+      heartsContainer.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 9000);
+    }
+
+    setInterval(createHeart, 300);
+
+    // Gift modal
+    function openGift() {
+      document.getElementById("giftModal").classList.remove("hidden");
+    }
+
+    function closeGift() {
+      document.getElementById("giftModal").classList.add("hidden");
+    }
+  </script>
+
+</body>
+</html>
